@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.logo-img img {
+    width: 200px !important;
+}
+.navbar-2 {
+    height: 90px;
+    z-index: 100 !important;
+    background-color: white;
+}
+.link-2 {
+    font-size: 17px !important;
+    text-transform: uppercase !important;
+    font-weight: 500;
+    margin-left: 2rem !important;
+}
+.right-arrow {
+    margin-left: 10px !important;
+    color: black !important;
+    z-index: 100 !important;
+}
+.dropdown p {
+    font-size: 15px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+    padding-bottom: 15px ;
+}
+/*   banner style */
+.banner {
+    overflow: hidden;
+    padding: 0 !important;
+    position: relative;
+}
+.banner-slider {
+	position: absolute;
+	width: 100vw !important;
+	height: 60vh !important;
+	overflow: hidden;
+}
+.banner-img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: no-repeat 50% 50%;
+	background-size: cover;
+	animation: animate 15s linear infinite;
+	opacity: 1;
+	transform: scale(1.2);
+}
+.banner-img:nth-child(1) {
+	animation-name: animate-1;
+	z-index: 3;
+}
+.banner-img:nth-child(2) {
+	animation-name: animate-2;
+	z-index: 2;
+}
+.banner-img:nth-child(3) {
+	animation-name: animate-3;
+	z-index: 1;
+}
+@keyframes animate-1 {
+	0% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	1.5% {
+		opacity: 1;
+	}
+	23% {
+		opacity: 1;
+	}
+	26% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.2);
+	}
+	98% {
+		opacity: 0;
+		transform: scale(1.22);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes animate-2 {
+	23% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	26% {
+		opacity: 1;
+	}
+	48% {
+		opacity: 1;
+	}
+	51% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.2);
+	}
+}
+@keyframes animate-3 {
+	48% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	51% {
+		opacity: 1;
+	}
+	73% {
+		opacity: 1;
+	}
+	76% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.2);
+	}
+}
+.banner-slider-text {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35% !important;
+    height: 100% !important;
+    background-color: #AC191F;
+}
+.banner-inner {
+    height: 60vh !important;
+    position: relative;
+}
+.banner-slider-text {
+    padding: 4rem;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.banner-slider-text h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+    line-height: 3.6rem;
+    padding-bottom: 1rem;
+}
+.banner-slider-text p {
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    opacity: 0.8;
+    padding-bottom: 1.7rem;
+}
+.banner-slider-text a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    padding: 1.3rem 2.2rem !important;
+    background-color: #E31C25;
+    transition: all 0.4s;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: 3px solid #fff;
+    border-radius: 45px;
+}
+.banner-slider-text a:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: black;
+    border: 3px solid #E31C25;
+}
+
+
+/*     what-sheems   style  */
+
+.what-sheems {
+    background-image: url(image/about-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+}
+.what-sheems-card {
+    background-color: transparent !important;
+    border-radius: 0px !important;
+    border: none !important;
+}
+.what-sheems-card h1 {
+    color: white;
+    font-size: 50px;
+}
+.what-sheems-card p {
+    color: white;
+    font-size: 17px;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+.what-sheems-card a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    padding: 1.3rem 2.2rem !important;
+    background-color: #E31C25;
+    transition: all 0.4s;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 45px;
+}
+.what-sheems-card a:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: black;
+}
+
+/*   our-goal   style  */
+
+.our-goal {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-image: url(image/goal-bg.png);
+    background-position: 30% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel-1-box {
+    height: 26rem;
+    position: relative;
+    border-radius: 10px !important;
+}
+.carousel-1-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px !important;
+}
+.carousel-1-box::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #002e4208 -7%, #e31c25 90%);
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+}
+.our-goal-card {
+    width: 80% !important;
+    background-color: transparent !important;
+    border-radius: 0px !important;
+    border: none !important;
+}
+.our-goal-card h1 {
+    font-size: 40px;
+    color: white;
+    padding-bottom: 1rem;
+}
+.link-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #e31c25;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link-icon i {
+    font-size: 20px;
+    color: white;
+}
+.card-text h1 {
+    font-size: 30px;
+    color: white;
+    z-index: 100 !important;
+    text-align: left !important;
+}
+.card-text {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 100 ;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.card-text p {
+    font-size: 17px;
+    color: white;
+}
+
+
+/*    success-stories   style  */
+
+.success-stories {
+    background-image: url(image/testimonial-1.png);
+    background-repeat: no-repeat;
+    background-position: 30% 0%;
+    background-size: cover;
+}
+.our-goal-card-2 {
+    width: 100% !important;
+}
+.carousel-1-box-2 {
+    background-color: white;
+    padding: 2rem !important;
+}
+.carousel-1-box-2 h1 {
+    font-size: 20px;
+    color: black;
+    padding-bottom: .1rem !important;
+}
+.line {
+    width: 70px;
+    height: 2px;
+    background-color: #E31C25;
+    margin-bottom: 1rem;
+}
+
+/*   what-our-clind   style  */
+
+.what-our-clind {
+    background-image: url(image/sto-1.png);
+}
+
+.our-goal-card-3 {
+    width: 75% !important;
+    margin-left: 18rem !important;
+}
+.left {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.left img {
+    width: 90% !important;
+    height: 90% !important;
+    object-fit: cover;
+}
+.left::after {
+    position: absolute;
+    width: 110%;
+    height: 1px;
+    background-color: #e31c25;
+    content: '';
+    bottom: 0;
+    left: 10%;
+}
+.left::before {
+    position: absolute;
+    width: 1px;
+    height: 110%;
+    background-color: #e31c25;
+    content: '';
+    right:  0;
+    top:  10%;
+}
+.card-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem !important;
+}
+.right p {
+    font-size: 15px;
+    font-weight: 300;
+}
+.carousel-1-box-3 {
+    padding: 1.3rem !important;
+    height: 31rem !important;
+}
+.carousel-1-box-3 img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+}
+.carousel-1-box-3 h2 {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(68, 68, 68);
+    padding-top: 1.5rem;
+}
+.carousel-1-box-3 h1 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 2rem;
+    cursor: pointer;
+    transition: all .3s;
+    padding-top: .5rem;
+    padding-bottom: .5rem !important;
+}
+.carousel-1-box-3 h1:hover {
+    color: #AC191F;
+}
+.carousel-1-box-3 a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #e31c25;
+}
+.success-stories-2 {
+    background-image: url(image/blog-bg.png);
+}
+
+/*   footer style   */
+
+.footer-section {
+    background-image: url(image/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+}
+.footer-section::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: #000;
+    opacity: .7;
+}
+.footer-card {
+    border-radius: 0px !important;
+    border: none !important;
+    background-color: transparent !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 100 !important;
+}
+.footer-card img {
+    width: 250px;
+}
+.footer-card p {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(226, 226, 226);
+}
+.footer-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+.footer-card h3 i {
+    margin-right: 10px;
+}
+.footer-card span {
+    font-size: 16px;
+    color: #e31c25;
+    font-weight: 400;
+    padding-left: 3rem;
+}
+.footer-card h1 {
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    padding-bottom: 2rem;
+}
+.footer-card ul {
+    padding-left: 0px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer-card ul li {
+    list-style: none;
+    color: white;
+    font-size: 14px;
+    opacity: .7;
+    letter-spacing: 1px;
+}
+.footer-card input {
+    border: none;
+    outline: none;
+    padding: .7rem;
+    width: 100%;
+    border-radius: 4px;
+}
+.footer-card a {
+    text-decoration: none;
+    padding: .7rem;
+    background-color: #e31c25;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: all 0.5s;
+    border: 2px solid #e31c25;
+}
+.footer-card a:hover {
+    background-color: #000;
+    border: 2px solid white;
+    color: white;
+}
+
+.last-footer {
+    padding-top: 1rem;
+    background-color: #e31c25;
+    padding-bottom: 1rem;
+}
+.last-footer p {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+@media only screen and (max-width: 480px) {
+    .banner-slider {
+        height: 100vh !important;
+        margin-top: 1rem;
+    }
+    .banner-inner {
+        height: 100vh;
+    }
+    .banner-slider-text {
+        background-color: transparent !important;
+        width: 100% !important;
+    }
+    .banner-slider-text h1 {
+        font-size: 26px;
+        width: 100%;
+        line-height: 2rem;
+    }
+    .banner-slider-text p {
+        font-weight: 600;
+    }
+    .banner-slider-text a {
+        font-size: 15px;
+        padding: .8rem 1.7rem !important;
+    }
+    .what-sheems {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-position: 0% 100%;
+        position: relative;
+    }
+    .what-sheems::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-color: black;
+        opacity: 0.5;
+    }
+    .what-sheems-card h1 {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 3.2rem;
+        z-index: 100;
+    }
+    .what-sheems-card p {
+        z-index: 100;
+    }
+    .what-sheems-card div {
+        z-index: 100;
+    }
+    .what-sheems-card a {
+        font-size: 15px;
+        padding: .8rem 1.7rem !important;
+    }
+    .our-goal {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .our-goal-card {
+        width: 100% !important;
+    }
+    .navbar-collapse {
+        background-color: white !important;
+    }
+    .our-goal-card-3 {
+        width: 100% !important;
+        margin-left: 0rem !important;
+    }
+}
